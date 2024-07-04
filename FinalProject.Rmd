@@ -1,0 +1,39 @@
+---
+title: "FinalProject"
+author: "Alexander Bartel"
+date: "12/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Power Analysis
+
+```{r, include=TRUE, echo=TRUE}
+library(stats)
+treatment_means <- c(80,83,86,89)
+five_block_power <- power.anova.test(groups=4, n=5, between.var=var(treatment_means), within.var=55, sig.level=0.05)
+five_block_power
+ten_block_power <- power.anova.test(groups=4, n=10, between.var=var(treatment_means), within.var=55, sig.level=0.05)
+ten_block_power
+fifteen_block_power <- power.anova.test(groups=4, n=15, between.var=var(treatment_means), within.var=55, sig.level=0.05)
+fifteen_block_power
+twenty_block_power <- power.anova.test(groups=4, n=20, between.var=var(treatment_means), within.var=55, sig.level=0.05)
+twenty_block_power
+twentyfive_block_power <- power.anova.test(groups=4, n=25, between.var=var(treatment_means), within.var=55, sig.level=0.05)
+twentyfive_block_power
+thirty_block_power <- power.anova.test(groups=4, n=30, between.var=var(treatment_means), within.var=55, sig.level=0.05)
+thirty_block_power
+eighty_power_block <- power.anova.test(groups=4, between.var=var(treatment_means), within.var=55, sig.level=0.05, power=0.80)
+eighty_power_block
+```
+
+## Power by Blocks Plot
+
+```{r, include=TRUE, echo=FALSE}
+df <- data.frame(blocks=c(5,10,15,20,25,30), power=c(five_block_power$power,ten_block_power$power,fifteen_block_power$power,twenty_block_power$power,twentyfive_block_power$power,thirty_block_power$power))
+library(ggplot2)
+ggplot(aes(x=blocks, y=power), data=df)+geom_line()
+```
