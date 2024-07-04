@@ -3,4 +3,6 @@ This has a sampling of data science projects that I have completed to hone and d
 
 [Image Classification](https://github.com/albartel/albartel.github.io/blob/main/Image%20Classification.ipynb)
 
+[Sentiment Analysis and Text Mining](https://github.com/albartel/albartel.github.io/blob/main/Sentiment%20Analysis.ipynb)
+
 
