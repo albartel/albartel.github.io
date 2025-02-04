@@ -3,7 +3,7 @@ This has a sampling of data science projects that I have completed to hone and d
 
 [Image Classification](https://github.com/albartel/albartel.github.io/blob/main/Image%20Classification.ipynb)
 
-[Credit Card Fraud Detection Classification and Analysis](https://github.com/albartel/albartel.github.io/blob/main/Credit%20Card%20Fraud%20Predictions%20Project.ipynb)
+[Credit Card Fraud Detection Classification and Analysis](https://github.com/albartel/albartel.github.io/blob/main/Credit%20Card%20Fraud%20Predictions%20Project%20(3).ipynb)
 
 [Sentiment Analysis and Text Mining](https://github.com/albartel/albartel.github.io/blob/main/Sentiment%20Analysis.ipynb)
 
