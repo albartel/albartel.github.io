@@ -1,7 +1,8 @@
 ---
-title: Alex Bartel's Data Science Portfolio
+title: Alex Bartel Github Page Site
 layout: default
 ---
+##Alex Bartel's Data Science Portfolio
 
 This has a sampling of data science projects that I have completed to hone and demonstrate my skills in this subject. It includes project examples of data preparation, building and tuning machine learning models for classification problems, natural language processing, big data analytics, and more.
 
